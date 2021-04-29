@@ -58,16 +58,24 @@
   }
 }
 
+form {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+}
 .F {
   display: grid;
-  grid-template-columns: repeat(2, 100px);
+  grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(6, 30px);
   align-items: center;
 }
 
 .F-title {
-  grid-column: 1 / 3;
+  grid-column: 1 / 4;
   grid-row: 1 / 2;
+}
+.removeButton:hover {
+  color: red;
 }
 
 .D {
